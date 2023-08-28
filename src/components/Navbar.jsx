@@ -54,54 +54,68 @@ const Navbar = () => {
             </div>
 
             {/* overlay */}
-            <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
-                <div className="card-title-btn">
+            {/* <div
+                onClick={openCart}
+                className={`page-overlay ${cart ? "open-flex" : "closed-flex"}`}
+            ></div> */}
+
+            {/* cart */}
+            {/* <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
+                <div className="cart-title-btn">
                     <h2 className="cart-full-h2">
-                        Shopping Cart
+                        Your Shopping Cart ({cartItem.length})
                     </h2>
                     <i onClick={openCart} className="fa-sharp fa-solid fa-xmark"></i>
-
-                    <div className="cart-body">
-                        {/* {cartItem.length < 1 ? (
-                            <EmptyCart openCart={openCart} />
-                        ) : (
-                            <CartWithItems />
-                        )} */}
-                    </div>
                 </div>
 
-                <nav className="navbar">
-                    <div className="container">
-                        <div className={`nav-container ${sticky ? "cont-sticky" : ""}`}>
-                            <Link to='/'>
-                                <img src={Logo1}
-                                    alt="logo"
-                                    onClick={scrollToTop}
-                                    className='logo-img' />
-                            </Link>
+                <div className="cart-body">
+                    {cartItem.length < 1 ? (
+                        <EmptyCart openCart={openCart} />
+                    ) : (
+                        <CartWithItems />
+                    )}
+                </div>
+            </div> */}
 
-                            <div className="nav-links">
-                                <Link onClick={() => window.scrollTo(0, 0)} to='/categories/all'>
-                                    categories
-                                </Link>
-                                <Link onClick={() => window.scrollTo(0, 0)} to='/categories/product/19'>
-                                    our products
-                                </Link>
-                                {/* <i
-                                    // data-array-length={cartItem.length}
-                                    onClick={openCart}
-                                    className={`fa-solid fa-cart-shopping
-                                    ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
-                                        }`}></i> */}
-                                <i
-                                    onClick={() => setMobileNav(!mobileNav)}
-                                    className="fa-solid fa-bars-staggered"
-                                ></i>
-                            </div>
+            <nav className="navbar">
+                <div className="container">
+                    <div className={`nav-container ${sticky ? "cont-sticky" : ""}`}>
+                        <Link to='/'>
+                            <img src={Logo1}
+                                alt="logo"
+                                onClick={scrollToTop}
+                                className='logo-img' />
+                        </Link>
+
+                        <div className="nav-links">
+                            <Link onClick={() => window.scrollTo(0, 0)} to='/categories/all'>
+                                categories
+                            </Link>
+                            <Link onClick={() => window.scrollTo(0, 0)} to='/categories/product/19'>
+                                our products
+                            </Link>
+                            {/* <i
+                                data-array-length={cartItem.length}
+                                onClick={openCart}
+                                className={`fa-solid fa-cart-shopping ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                                    }`}
+                            ></i> */}
+                        </div>
+                        <div className="hamburger-menu">
+                            {/* <i
+                                data-array-length={cartItem.length}
+                                onClick={openCart}
+                                className={`fa-solid fa-cart-shopping hamburger-cart ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                                    }`}
+                            ></i> */}
+                            <i
+                                onClick={() => setMobileNav(!mobileNav)}
+                                className="fa-solid fa-bars-staggered hamburger-hamb"
+                            ></i>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </>
     )
 }
