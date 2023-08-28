@@ -9,7 +9,7 @@ import All from './components/shopping_sections/All'
 import Mens from './components/shopping_sections/Mens'
 import Womens from './components/shopping_sections/Womens'
 import Electronics from './components/shopping_sections/Electronics'
-import Lamps from './components/shopping_sections/Lamps'
+import Jewellery from './components/shopping_sections/Jewellery'
 import SkinCare from './components/shopping_sections/SkinCare'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="all" element={<All />} />
           <Route path="mens" element={<Mens />} />
           <Route path="electronics" element={<Electronics />} />
-          <Route path="lamps" element={<Lamps />} />
+          <Route path="jewellery" element={<Jewellery />} />
           <Route path="womens" element={<Womens />} />
           <Route path="skin-care" element={<SkinCare />} />
         </Route>
