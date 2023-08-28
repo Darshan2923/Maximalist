@@ -1,10 +1,10 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import '../styles/Navbar.css'
 import Logo1 from '../assets/logo-main.png'
 import { Link } from 'react-router-dom'
-import EmptyCart from './EmptyCart'
-import CartWithItems from "./CartWithItems";
-import { CardContext } from '../pages/ProductPage'
+// import EmptyCart from './EmptyCart'
+// import CartWithItems from "./CartWithItems";
+// import { CartContext } from '../pages/ProductPage'
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
@@ -22,7 +22,9 @@ const Navbar = () => {
         });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // const { cartItem } = useContext(CartContext);
+
+
 
     const handleScroll = () => {
         if (window.scrollY > 10) {
@@ -31,6 +33,8 @@ const Navbar = () => {
             setSticky(false);
         }
     };
+
+    window.addEventListener("scroll", handleScroll);
 
     return (
         <>
@@ -58,11 +62,11 @@ const Navbar = () => {
                     <i onClick={openCart} className="fa-sharp fa-solid fa-xmark"></i>
 
                     <div className="cart-body">
-                        {cartItem.length < 1 ? (
+                        {/* {cartItem.length < 1 ? (
                             <EmptyCart openCart={openCart} />
                         ) : (
                             <CartWithItems />
-                        )}
+                        )} */}
                     </div>
                 </div>
 
@@ -83,11 +87,12 @@ const Navbar = () => {
                                 <Link onClick={() => window.scrollTo(0, 0)} to='/categories/product/19'>
                                     our products
                                 </Link>
-                                <i
-                                    data-array-length={cartItem.length}
+                                {/* <i
+                                    // data-array-length={cartItem.length}
                                     onClick={openCart}
-                                    className={`fa-solid fa-cart-shopping ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
-                                        }`}></i>
+                                    className={`fa-solid fa-cart-shopping
+                                    ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
+                                        }`}></i> */}
                                 <i
                                     onClick={() => setMobileNav(!mobileNav)}
                                     className="fa-solid fa-bars-staggered"
