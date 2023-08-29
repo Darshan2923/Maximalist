@@ -44,8 +44,8 @@ const Navbar = () => {
                     <Link onClick={() => setMobileNav(!mobileNav)} to='/categories/all'>
                         categories
                     </Link>
-                    <Link onClick={() => setMobileNav(!mobileNav)} to='/categories/mens'>
-                        Mens Clothing
+                    <Link onClick={() => setMobileNav(!mobileNav)} to='/categories/womens'>
+                        Womens Clothing
                     </Link>
                     <Link onClick={() => setMobileNav(!mobileNav)} to='/categories/product/19'>
                         Our products
@@ -94,6 +94,7 @@ const Navbar = () => {
                             <Link onClick={() => window.scrollTo(0, 0)} to='/categories/product/19'>
                                 our products
                             </Link>
+                            <i className='fa-solid fa-cart-shopping'></i>
                             {/* <i
                                 data-array-length={cartItem.length}
                                 onClick={openCart}
