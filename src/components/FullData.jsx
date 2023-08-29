@@ -99,5 +99,113 @@ export const items = [
             "count": 259
         }
     },
+    {
+        id: 7,
+        category: "skin-care",
+        img: Img15,
+        description: "Body Oil 50ml",
+        price: 199,
+        specs:
+            "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water.",
+        texture: "Liquid",
+        "rating": {
+            "rate": 4.1,
+            "count": 100
+        }
+    },
+    {
+        id: 8,
+        category: 'womens',
+        img: Img8,
+        description: "Women's Short Sleeve",
+        price: 499,
+        specs: "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem.",
+        texture: "RAYON",
+        "rating": {
+            "rate": 4.7,
+            "count": 130
+        }
+    },
+    {
+        id: 9,
+        category: 'jewellery',
+        img: Img9,
+        description: "Naga Gold & Silver Brecelet",
+        price: 23999,
+        specs: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+        texture: "Silver",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        id: 10,
+        category: 'electronics',
+        img: Img10,
+        description: "Silicon Power 256GB SSD",
+        price: 1199,
+        specs: "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        texture: "Plastic",
+        "rating": {
+            "rate": 4.8,
+            "count": 319
+        }
+    },
+    {
+        id: 11,
+        category: 'electronics',
+        img: Img11,
+        description: "Acer SB220Q Ultra-Thin",
+        price: 41999,
+        specs: "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        texture: "metalloid",
+        "rating": {
+            "rate": 2.9,
+            "count": 250
+        }
+    },
+    {
+        id: 12,
+        category: "skin-care",
+        img: Img12,
+        description: "Unbleached Cotton Pads 180",
+        price: 199,
+        specs:
+            "Cotton pads made from soft, unbleached cotton. These are made in Japan and made from 100% cotton.",
+        texture: "Cotton",
+        "rating": {
+            "rate": 3.9,
+            "count": 200
+        }
+    },
+    {
+        id: 13,
+        category: "womens",
+        img: Img13,
+        description: "DANVOUY Womens T Shirt",
+        price: 1199,
+        specs:
+            "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+        texture: "Cotton",
+        "rating": {
+            "rate": 3.6,
+            "count": 145
+        }
+    },
+    {
+        id: 14,
+        category: "mens",
+        img: Img14,
+        description: "Mens Casual T-shirts",
+        price: 1399,
+        specs:
+            "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        texture: "Cotton",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
 
 ]
