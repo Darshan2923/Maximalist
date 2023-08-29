@@ -1,8 +1,15 @@
 import React from 'react'
+import Newsletter from '../NewsLetter';
+import Footer from '../Footer';
+import CategoriesMen from './CategoriesMen';
 
 const Mens = () => {
     return (
-        <div>Mens</div>
+        <>
+            <CategoriesMen />
+            <Newsletter />
+            <Footer />
+        </>
     )
 }
 

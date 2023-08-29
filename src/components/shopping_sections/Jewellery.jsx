@@ -1,8 +1,15 @@
 import React from 'react'
+import CategoriesJewellery from './CategoriesJewellery'
+import Newsletter from '../NewsLetter'
+import Footer from '../Footer'
 
 const Jewellery = () => {
     return (
-        <div>Jewellers</div>
+        <>
+            <CategoriesJewellery />
+            <Newsletter />
+            <Footer />
+        </>
     )
 }
 
