@@ -1,5 +1,6 @@
 import React from 'react'
 import TrendingItem from './TrendingItem';
+import '../styles/Trending.css'
 
 const Trending = () => {
     const slideLeft = () => {
