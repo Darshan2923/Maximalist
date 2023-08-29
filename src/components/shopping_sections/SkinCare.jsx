@@ -1,8 +1,15 @@
 import React from 'react'
+import CategoriesSkinCare from './CategoriesSkinCare'
+import Newsletter from '../NewsLetter'
+import Footer from '../Footer'
 
 const SkinCare = () => {
     return (
-        <div>SkinCare</div>
+        <div>
+            <CategoriesSkinCare />
+            <Newsletter />
+            <Footer />
+        </div>
     )
 }
 
