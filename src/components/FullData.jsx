@@ -207,5 +207,87 @@ export const items = [
             "count": 259
         }
     },
-
+    {
+        id: 15,
+        category: 'jewellery',
+        img: Img7,
+        description: "Pierced Owl Rose Gold Plated",
+        price: 1499,
+        specs: "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel.",
+        texture: "Steel",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        id: 16,
+        category: "womens",
+        img: Img16,
+        description: "Opna Women's Short Sleeve",
+        price: 499,
+        specs:
+            "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+        texture: "Polyester",
+        "rating": {
+            "rate": 4.5,
+            "count": 146
+        }
+    },
+    {
+        id: 17,
+        category: "electronics",
+        img: Img17,
+        description: "Portable External Hard Drive",
+        price: 699,
+        specs:
+            "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+        texture: "plastic",
+        "rating": {
+            "rate": 3.3,
+            "count": 203
+        }
+    },
+    {
+        id: 18,
+        category: "mens",
+        img: Img18,
+        description: "Foldsack No. 1 Backpack",
+        price: 1299,
+        specs:
+            "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        texture: "solid",
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        id: 19,
+        category: "electronics",
+        img: Img19,
+        description: "WD 4TB Gaming Drive",
+        price: 2299,
+        specs:
+            "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+        texture: "metalloid",
+        "rating": {
+            "rate": 4.8,
+            "count": 400
+        }
+    },
+    {
+        id: 20,
+        category: "skin-care",
+        img: Img20,
+        description: "Body Oil 200ml",
+        price: 149,
+        specs:
+            "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water",
+        texture: "Liquid",
+        "rating": {
+            "rate": 3.8,
+            "count": 200
+        }
+    },
 ]
