@@ -16,14 +16,14 @@ const Trending = () => {
     return (
         <div className='trending'>
             <div className="container">
-                <div className="title btns">
+                <div className="title-btns">
                     <h3>Trending Products</h3>
                     <div className="btns">
                         <button title='scroll-left' onClick={slideLeft}>
-                            <i className="fa-solid fa-angle-left" ></i>
+                            <i className="fa-solid fa-arrow-left" ></i>
                         </button>
                         <button title='scroll-right' onClick={slideRight}>
-                            <i className="fa-solid fa-angle-right" ></i>
+                            <i className="fa-solid fa-arrow-right" ></i>
                         </button>
                     </div>
                 </div>

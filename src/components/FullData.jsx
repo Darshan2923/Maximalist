@@ -36,6 +36,19 @@ export const items = [
     },
     {
         id: 2,
+        category: 'jewellery',
+        img: Img9,
+        description: "Naga Gold & Silver Brecelet",
+        price: 23999,
+        specs: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+        texture: "Silver",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        id: 3,
         category: 'womens',
         img: Img2,
         description: "Women Biker Jacket",
@@ -45,19 +58,6 @@ export const items = [
         "rating": {
             "rate": 2.9,
             "count": 340
-        }
-    },
-    {
-        id: 3,
-        category: 'jewellery',
-        img: Img3,
-        description: "Gold Petite Micropave",
-        price: 23999,
-        specs: "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-        texture: "Gold",
-        "rating": {
-            "rate": 3.9,
-            "count": 70
         }
     },
     {
@@ -128,28 +128,30 @@ export const items = [
     },
     {
         id: 9,
-        category: 'jewellery',
-        img: Img9,
-        description: "Naga Gold & Silver Brecelet",
-        price: 23999,
-        specs: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-        texture: "Silver",
+        category: "skin-care",
+        img: Img20,
+        description: "Body Oil 200ml",
+        price: 149,
+        specs:
+            "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water",
+        texture: "Liquid",
         "rating": {
-            "rate": 4.6,
-            "count": 400
+            "rate": 3.8,
+            "count": 200
         }
     },
     {
         id: 10,
-        category: 'electronics',
-        img: Img10,
-        description: "Silicon Power 256GB SSD",
-        price: 1199,
-        specs: "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-        texture: "Plastic",
+        category: "mens",
+        img: Img14,
+        description: "Mens Casual T-shirts",
+        price: 1399,
+        specs:
+            "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        texture: "Cotton",
         "rating": {
-            "rate": 4.8,
-            "count": 319
+            "rate": 4.1,
+            "count": 259
         }
     },
     {
@@ -167,20 +169,6 @@ export const items = [
     },
     {
         id: 12,
-        category: "skin-care",
-        img: Img12,
-        description: "Unbleached Cotton Pads 180",
-        price: 199,
-        specs:
-            "Cotton pads made from soft, unbleached cotton. These are made in Japan and made from 100% cotton.",
-        texture: "Cotton",
-        "rating": {
-            "rate": 3.9,
-            "count": 200
-        }
-    },
-    {
-        id: 13,
         category: "womens",
         img: Img13,
         description: "DANVOUY Womens T Shirt",
@@ -194,30 +182,43 @@ export const items = [
         }
     },
     {
-        id: 14,
-        category: "mens",
-        img: Img14,
-        description: "Mens Casual T-shirts",
-        price: 1399,
+        id: 13,
+        category: "skin-care",
+        img: Img12,
+        description: "Unbleached Cotton Pads 180",
+        price: 199,
         specs:
-            "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            "Cotton pads made from soft, unbleached cotton. These are made in Japan and made from 100% cotton.",
         texture: "Cotton",
         "rating": {
-            "rate": 4.1,
-            "count": 259
+            "rate": 3.9,
+            "count": 200
+        }
+    },
+    {
+        id: 14,
+        category: 'electronics',
+        img: Img10,
+        description: "Silicon Power 256GB SSD",
+        price: 1199,
+        specs: "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        texture: "Plastic",
+        "rating": {
+            "rate": 4.8,
+            "count": 319
         }
     },
     {
         id: 15,
         category: 'jewellery',
-        img: Img7,
-        description: "Pierced Owl Rose Gold Plated",
-        price: 1499,
-        specs: "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel.",
-        texture: "Steel",
+        img: Img3,
+        description: "Gold Petite Micropave",
+        price: 23999,
+        specs: "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+        texture: "Gold",
         "rating": {
-            "rate": 1.9,
-            "count": 100
+            "rate": 3.9,
+            "count": 70
         }
     },
     {
@@ -278,16 +279,16 @@ export const items = [
     },
     {
         id: 20,
-        category: "skin-care",
-        img: Img20,
-        description: "Body Oil 200ml",
-        price: 149,
-        specs:
-            "Made from 100% plant-based oils with olive oil as the main ingredient, this cleansing oil is gentle on the skin. Free from fragrance, colours and, mineral oils, paraben free, alcohol free, allergy tested (we cannot guarantee that it will not cause allergies in any users) * How to use: Take a small amount in the palm of your hand, and massage into the face to remove make-up and dirt. Rinse well with cold or warm water",
-        texture: "Liquid",
+        category: 'jewellery',
+        img: Img7,
+        description: "Pierced Owl Rose Gold Plated",
+        price: 1499,
+        specs: "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel.",
+        texture: "Steel",
         "rating": {
-            "rate": 3.8,
-            "count": 200
+            "rate": 1.9,
+            "count": 100
         }
     },
+
 ]
