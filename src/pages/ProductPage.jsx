@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 import Newsletter from '../components/NewsLetter'
 import Footer from '../components/Footer'
 import Trending from '../components/Trending'
@@ -6,11 +6,27 @@ import { items } from '../components/FullData'
 import { useParams } from 'react-router-dom'
 import '../styles/ProductPage.css'
 
+// for cart items-------last me daala
+export const CartContext = createContext();
+//  ---------------------
+
 const ProductPage = () => {
     const { id } = useParams();
     const [quantity, setQuantity] = useState(1);
 
     const item = items.filter((item) => item.id === parseInt(id));
+
+
+
+    // for cart items-------last me daala
+    const [image, setImage] = useState(item[0].img);
+
+    const { addCart } = useContext(CartContext);
+
+    const changeImage = (e) => {
+        setImage(e.target.src);
+    };
+    // ------------------------
 
     const increase = () => {
         if (quantity >= 1) {
@@ -29,9 +45,23 @@ const ProductPage = () => {
     };
 
 
+    // for cart items-------last me daala
+    const [notify, setNotify] = useState(false);
+    const showNotify = () => {
+        setNotify(!notify);
+    };
+    //-------------------------
 
     return (
         <>
+            {/* for cart items-------last me daala */}
+            <div className={`notify ${notify ? "slide-in" : ""}`}
+                onAnimationEnd={() => setNotify(false)}
+            >
+                <p>Item has been added to the cart &nbsp; ✅</p>
+            </div>
+            {/* ------------------------------ */}
+
             <div className="product-page-div">
                 <div className="container">
                     <div className="product-div">
@@ -53,7 +83,12 @@ const ProductPage = () => {
                                 <p className="product-price">{calcPrice(quantity)}.00₹</p>
                             </div>
                             <div className="atc-buy">
-                                <button className="atc-btn">
+                                <button
+                                    onClick={() => {
+                                        addCart(item[0]);
+                                        showNotify();
+                                    }}
+                                    className="atc-btn">
                                     add to cart
                                 </button>
                                 <button className="buy-btn">buy now</button>
