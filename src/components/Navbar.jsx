@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../styles/Navbar.css'
 import Logo1 from '../assets/logo-main.png'
 import { Link } from 'react-router-dom'
-// import EmptyCart from './EmptyCart'
-// import CartWithItems from "./CartWithItems";
-// import { CartContext } from '../pages/ProductPage'
+import EmptyCart from './EmptyCart'
+import CartWithItems from "./CartWithItems";
+import { CartContext } from '../pages/ProductPage'
 
 const Navbar = () => {
     const [sticky, setSticky] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
         });
     };
 
-    // const { cartItem } = useContext(CartContext);
+    const { cartItem } = useContext(CartContext);
 
 
 
@@ -54,13 +54,13 @@ const Navbar = () => {
             </div>
 
             {/* overlay */}
-            {/* <div
+            <div
                 onClick={openCart}
                 className={`page-overlay ${cart ? "open-flex" : "closed-flex"}`}
-            ></div> */}
+            ></div>
 
             {/* cart */}
-            {/* <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
+            <div className={`cart-div ${cart ? "open-cart" : "closed-cart"}`}>
                 <div className="cart-title-btn">
                     <h2 className="cart-full-h2">
                         Your Shopping Cart ({cartItem.length})
@@ -75,7 +75,7 @@ const Navbar = () => {
                         <CartWithItems />
                     )}
                 </div>
-            </div> */}
+            </div>
 
             <nav className="navbar">
                 <div className="container">
@@ -94,21 +94,20 @@ const Navbar = () => {
                             <Link onClick={() => window.scrollTo(0, 0)} to='/categories/product/19'>
                                 our products
                             </Link>
-                            <i className='fa-solid fa-cart-shopping'></i>
-                            {/* <i
+                            <i
                                 data-array-length={cartItem.length}
                                 onClick={openCart}
                                 className={`fa-solid fa-cart-shopping ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
                                     }`}
-                            ></i> */}
+                            ></i>
                         </div>
                         <div className="hamburger-menu">
-                            {/* <i
+                            <i
                                 data-array-length={cartItem.length}
                                 onClick={openCart}
                                 className={`fa-solid fa-cart-shopping hamburger-cart ${cartItem.length < 1 ? "cart-icon" : "cart-icon with-items"
                                     }`}
-                            ></i> */}
+                            ></i>
                             <i
                                 onClick={() => setMobileNav(!mobileNav)}
                                 className="fa-solid fa-bars-staggered hamburger-hamb"
