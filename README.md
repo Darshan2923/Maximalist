@@ -1,4 +1,4 @@
-![maximalist vercel app_categories_all (1)](https://github.com/Darshan2923/Maximalist/assets/135990671/6338bea0-7768-4c91-8e02-345fd897bd63)<div align='center'><img src='https://github.com/Darshan2923/Maximalist/assets/135990671/3466968b-9c7a-408f-8b7f-a5c0e65ea654.png'/></div>
+<div align='center'><img src='https://user-images.githubusercontent.com/105128267/224688338-8f1f28b7-029b-4ed7-a567-86de0c44ff42.png'/></div>
 
 <h2>About the project</h2>
 
