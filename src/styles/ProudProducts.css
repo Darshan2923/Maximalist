@@ -80,10 +80,9 @@ a {
     color: white;
     background-color: #373737;
     padding: 1.2rem 2.2rem;
-    z-index: 999999999;
+    z-index: 9999999999999999 !important;
     font-size: 2rem;
     position: absolute;
-    transform: translate(-50%);
     top: -100%;
     left: 50%;
 }
@@ -102,11 +101,11 @@ a {
     }
 
     40% {
-        top: 90px;
+        top: 130px;
     }
 
     60% {
-        top: 90px;
+        top: 130px;
     }
 
     100% {
