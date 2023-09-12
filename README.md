@@ -10,7 +10,8 @@
 <h3>Build with:</h3>
 
 » Vanila CSS <br>
-» React JS
+» React JS <br>
+» Local Storage
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
